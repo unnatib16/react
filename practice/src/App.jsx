@@ -1,11 +1,14 @@
 import React from 'react';
-import Header from './component/header'
-import Footer from './component/Footer'
+import Greeting from './component/Greeting';
+
 function App() {
   return (
-    <>
-    <Header/>
-    </>
+    <div>
+      <h1>Hello, React!</h1>
+      <Greeting name="John" message="Let's learn React together!" />
+    </div>
   );
 }
+
 export default App;
+
