@@ -1,14 +1,12 @@
 import React from 'react';
-import Greeting from './component/Greeting';
 
-function App() {
+function Clock() {
   return (
     <div>
-      <h1>Hello, React!</h1>
-      <Greeting name="John" message="Let's learn React together!" />
+      <h2>It is {new Date().toLocaleTimeString()}.</h2>
     </div>
   );
 }
 
-export default App;
+export default Clock;
 
