@@ -1,16 +1,15 @@
-import { useState } from "react";
+import React, { useEffect,useState } from "react";
+import styles from "./Header.module.css"
 export default function Header(){
-
-    const[count,setCount] = useState(0); 
-    const increase=()=> {
-        setCount(count+1);
-    }
+    const items = ['Apple', 'Banana', 'Orange', 'Mango'];
     return(
         <>
-        <h1>Count : {count}</h1>
-        <button onClick={increase}>
-            Inrease count
-        </button>
-        </>
-    )
-}
+    <ul>
+  {items.map((item, index) => (
+    <li key={index}>{item}</li>
+  ))}
+</ul>
+</>
+    )}
+
+

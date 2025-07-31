@@ -1,12 +1,11 @@
 import React from 'react';
-
-function Clock() {
+import Header from './component/header'
+import Footer from './component/Footer'
+function App() {
   return (
-    <div>
-      <h2>It is {new Date().toLocaleTimeString()}.</h2>
-    </div>
+    <>
+    <Header/>
+    </>
   );
 }
-
-export default Clock;
-
+export default App;
