@@ -2,8 +2,8 @@ import React from 'react';
 
 function EventHandler() {
   const handleClick = () => {
-  console.log('Clicked!');
-};
+    console.log('Clicked!');
+  };
 
   return (
     <button onClick={handleClick}>
@@ -11,5 +11,6 @@ function EventHandler() {
     </button>
   );
 }
+
 export default EventHandler;
 

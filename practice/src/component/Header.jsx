@@ -24,7 +24,7 @@ export default function Header(){
             <input type="email" placeholder="email" value={email} onChange={(e)=>setEmail(e.target.value)}></input>
             <br></br>
             <br></br>
-            <button type="submit">Submit</button>
+            <button className="button" type="submit">Submit</button>
         </form>
         </>
     )
