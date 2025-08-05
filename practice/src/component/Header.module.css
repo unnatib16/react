@@ -5,3 +5,11 @@
 .button{
     color:red
 }
+
+.unorderli{
+    display: flex;
+    justify-content: right;
+    gap:"30px";
+    list-style: "none";
+    margin:"10px"
+}
