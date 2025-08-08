@@ -1,24 +1,26 @@
 import React from 'react';
-import Layout from './Layout';
-import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
-import Home from './component/Home';
-import About from './component/About';
-import Contact from './component/Contact';
-import Book from './component/Book';
+import {BrowserRouter as Router,Routes,Route,Link} from "react-router-dom";
+import TodoApp from "./TodoApp";
+import Home from "./component/Home";
 function App() {
   return (
     <>
     <Router>
-      <Routes>
-        <Route path="/" element ={<Layout/>}>
-        <Route index element={<Home/>}></Route>
-        <Route path="home" element ={<Home/>}></Route>
-        <Route path="about" element ={<About/>}></Route>
-        <Route path="contact" element ={<Contact/>}></Route>
-        <Route path="book" element ={<Book/>}></Route>
-        </Route>
-      </Routes>
-    </Router>
+  <nav>
+    <ul>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/todo">Todo App</Link>
+      </li>
+    </ul>
+  </nav>
+  <Routes>
+  <Route path="/" element={<Home/>} />
+  <Route path="/todo" element={<TodoApp/>} />
+  </Routes>
+</Router>
     </>
   );
 }
